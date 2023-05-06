@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+:root{
+    --Paleblue: hsl(225, 100%, 94%);
+    --Brightblue: hsl(245, 75%, 52%);
+    --VeryPaleblue: hsl(225, 100%, 98%);
+    --DesaturatedBlue: hsl(224, 23%, 55%);
+    --DarkBlue: hsl(223, 47%, 23%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body{
+    background: url(./images/pattern-background-desktop.svg)no-repeat; 
+    background-color: var(--Paleblue);
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+main{
+    height: 570px;
+    width: 400px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+h1{
+    font-size: 21px;
+    margin-top: 30px;
+}
+
+main p{
+    margin-top: 15px;
+    width: 80%;
+    text-align: center;
+}
+.card{
+    padding: 18px ;
+    width: 80%;
+    height: 13%;
+    background-color: var(--VeryPaleblue);
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 17px;
+}
+
+.card img{
+    width: 50px;
+}
+.anu{
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+    margin-bottom: 15px;
+}
+.anu p{
+    font-size: 16px;
+    width: 90px;
+}
+span{
+    opacity: 55%;
+}
+a{
+    font-size: 14px;
+    margin-left: 80px;
+}
+.btn{
+    padding: 12px 100px;
+    background: var(--Brightblue);
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: white;
+}
+.btn:hover{
+    background-color: var(--DarkBlue);
+    transition: .4s ease;
+    cursor: pointer;
+}
+
+.last{
+    margin-top: 30px;
+    cursor: pointer;
+}
